@@ -1,0 +1,32 @@
+@import "mixin";
+@import "var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.main_header{
+    width: 100vw;
+    height:100vh;
+    @include centrecode;
+    background: $bg-color;
+    h1{
+        @include commoncode(1rem,capitalize);
+    &:hover{
+        color: white;
+    }
+    &::after{
+        content: "Yo";
+    }
+    }
+    p{  
+        @include commoncode(0.2rem,lowercase);
+        &:hover{
+            color: white;
+        }
+    }
+}

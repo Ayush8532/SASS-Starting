@@ -1,0 +1,13 @@
+@mixin centrecode {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin commoncode($part1, $part2) {
+    color: rgb(0, 62, 73);
+    font-size: 5rem+5rem;
+    letter-spacing: $part1;
+    text-transform: $part2;
+}
